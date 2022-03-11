@@ -1,5 +1,8 @@
 package com.example.demoweb.repository;
 
-public interface EmpleadoRepo {
+import com.example.demoweb.repository.entity.Empleado;
 
+public interface EmpleadoRepo extends JpaRepository{
+	public void registrar (String nombre);
+	
 }
