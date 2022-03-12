@@ -5,6 +5,10 @@ import java.util.List;
 import com.example.demoweb.repository.entity.Empleado;
 
 public interface EmpleadoService {
-	public void registrar(String nombre);
-	public List<Empleado> listar();
+	void registrar(String nombre);
+	List<Empleado> listar();
+	List<Empleado> listarFiltroNombre(String cad);
+	List<Empleado> listarConJPA(Integer pId, String contiene);
+	List<Empleado> listarFiltroNombreEs(String cad);
+
 }
