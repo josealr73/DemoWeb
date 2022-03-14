@@ -44,4 +44,10 @@ public class EmpleadoServiceImpl implements EmpleadoService{
 		// TODO Auto-generated method stub
 		return empleadoRepo.listarCuyoNombreEs(cad);
 	}
+
+	@Override
+	public Empleado inserta(Empleado emp) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
