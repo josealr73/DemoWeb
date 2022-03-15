@@ -48,6 +48,24 @@ public class EmpleadoServiceImpl implements EmpleadoService{
 	@Override
 	public Empleado inserta(Empleado emp) {
 		// TODO Auto-generated method stub
-		return null;
+		return empleadoRepo.save(emp);
+	}
+
+	@Override
+	public Empleado modificar(Empleado emp) {
+		// TODO Auto-generated method stub
+		return empleadoRepo.save(emp);
+	}
+
+	@Override
+	public void eliminar(Integer id) {
+		// TODO Auto-generated method stub
+		empleadoRepo.deleteById(id);
+	}
+
+	@Override
+	public Empleado getById(Integer id) {
+		// TODO Auto-generated method stub
+		return empleadoRepo.findById(id).orElse(null);
 	}
 }

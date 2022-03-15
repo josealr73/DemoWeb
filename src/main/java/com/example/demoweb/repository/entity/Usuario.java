@@ -20,7 +20,7 @@ public class Usuario implements UserDetails {
 	private String username;
 	
 	@Column (name="nombre", nullable=false, length=50)
-	String nombreYapellidos;
+	private String nombreYapellidos;
 	
 	@Column (nullable=false)
 	private String password;
